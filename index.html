@@ -11,8 +11,8 @@
     :root {
       --bg:       #ffffff;
       --bg-alt:   #fff8f0;
-      --bg-dark:  #1e1a2e;
-      --ink:      #1e1a2e;
+      --bg-dark:  #e8f0f8;
+      --ink:      #0d2a4a;
       --red:      #c0292b;
       --red-dk:   #9a1f21;
       --red-lt:   #fff0f0;
@@ -39,37 +39,37 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 0.75rem 2rem;
       display: flex; align-items: center; justify-content: space-between;
-      background: rgba(30,26,46,0.97);
+      background: rgba(232,240,248,0.97);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(224,120,32,0.25);
+      border-bottom: 1px solid rgba(13,42,74,0.12);
     }
     .nav-logo { display: flex; align-items: center; gap: 0.75rem; }
     .nav-logo img { height: 44px; width: auto; }
-    .nav-logo-text { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: white; line-height: 1.1; }
-    .nav-logo-text small { display: block; font-family: 'Inter', sans-serif; font-size: 0.65rem; color: rgba(255,255,255,0.4); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; }
+    .nav-logo-text { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: #0d2a4a; line-height: 1.1; }
+    .nav-logo-text small { display: block; font-family: 'Inter', sans-serif; font-size: 0.65rem; color: rgba(13,42,74,0.45); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; }
     .nav-links { display: flex; gap: 1.75rem; list-style: none; }
-    .nav-links a { font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.65); transition: color 0.2s; }
+    .nav-links a { font-size: 0.82rem; font-weight: 500; color: rgba(13,42,74,0.65); transition: color 0.2s; }
     .nav-links a:hover { color: var(--amber); }
     .nav-cta { background: var(--red); color: white; padding: 0.5rem 1.25rem; border-radius: 4px; font-size: 0.82rem; font-weight: 500; transition: background 0.2s; }
     .nav-cta:hover { background: var(--red-dk); }
 
     /* HERO */
     .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 8rem 2rem 5rem; position: relative; overflow: hidden; background: var(--bg-dark); }
-    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 65% 55% at 80% 35%, rgba(224,120,32,0.1) 0%, transparent 65%), radial-gradient(ellipse 45% 65% at 10% 80%, rgba(192,41,43,0.08) 0%, transparent 60%); }
-    .hero-fiber { position: absolute; inset: 0; opacity: 0.03; background-image: repeating-linear-gradient(87deg, #e07820 0px, #e07820 1px, transparent 1px, transparent 48px), repeating-linear-gradient(3deg, #e07820 0px, #e07820 1px, transparent 1px, transparent 68px); }
+    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 65% 55% at 80% 35%, rgba(224,120,32,0.08) 0%, transparent 65%), radial-gradient(ellipse 45% 65% at 10% 80%, rgba(192,41,43,0.05) 0%, transparent 60%); }
+    .hero-fiber { position: absolute; inset: 0; opacity: 0.06; background-image: repeating-linear-gradient(87deg, #0d2a4a 0px, #0d2a4a 1px, transparent 1px, transparent 48px), repeating-linear-gradient(3deg, #0d2a4a 0px, #0d2a4a 1px, transparent 1px, transparent 68px); }
     .hero-content { position: relative; z-index: 1; max-width: 780px; }
-    .hero-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--amber); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+    .hero-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--amber-dk); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-eyebrow::before { content: ''; display: block; width: 2rem; height: 1px; background: var(--amber); }
-    .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.8rem, 6.5vw, 5rem); line-height: 1.05; letter-spacing: -0.03em; color: white; margin-bottom: 1.5rem; }
+    .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.8rem, 6.5vw, 5rem); line-height: 1.05; letter-spacing: -0.03em; color: #0d2a4a; margin-bottom: 1.5rem; }
     .hero h1 em { font-style: italic; color: var(--red); }
-    .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.6); max-width: 500px; line-height: 1.75; margin-bottom: 0.75rem; font-weight: 300; }
-    .hero-tagline { font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: rgba(255,255,255,0.8); font-style: italic; margin-bottom: 2.5rem; }
+    .hero-sub { font-size: 1.1rem; color: rgba(13,42,74,0.65); max-width: 500px; line-height: 1.75; margin-bottom: 0.75rem; font-weight: 300; }
+    .hero-tagline { font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: rgba(13,42,74,0.75); font-style: italic; margin-bottom: 2.5rem; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn-primary { background: var(--red); color: white; padding: 0.85rem 2rem; border-radius: 4px; font-weight: 500; font-size: 0.95rem; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
     .btn-primary:hover { background: var(--red-dk); transform: translateY(-1px); }
-    .btn-secondary { border: 1.5px solid rgba(255,255,255,0.2); color: white; padding: 0.85rem 2rem; border-radius: 4px; font-weight: 500; font-size: 0.95rem; transition: all 0.2s; }
-    .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
-    .hero-since { position: absolute; bottom: 2rem; right: 2rem; font-family: 'DM Serif Display', serif; font-size: 6rem; color: rgba(255,255,255,0.03); line-height: 1; user-select: none; pointer-events: none; }
+    .btn-secondary { border: 1.5px solid rgba(13,42,74,0.25); color: #0d2a4a; padding: 0.85rem 2rem; border-radius: 4px; font-weight: 500; font-size: 0.95rem; transition: all 0.2s; }
+    .btn-secondary:hover { border-color: var(--amber); color: var(--amber-dk); }
+    .hero-since { position: absolute; bottom: 2rem; right: 2rem; font-family: 'DM Serif Display', serif; font-size: 6rem; color: rgba(13,42,74,0.04); line-height: 1; user-select: none; pointer-events: none; }
 
     /* STATS */
     .stats-bar { background: var(--amber); display: grid; grid-template-columns: repeat(4,1fr); }
@@ -89,15 +89,15 @@
     #what { background: var(--bg); }
     .what-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
     .what-left p { color: var(--gray-dk); line-height: 1.8; margin-bottom: 1.25rem; font-size: 1rem; }
-    .second-choice-box { background: var(--bg-dark); border-radius: 12px; padding: 2rem; margin-top: 1.5rem; }
-    .second-choice-box h4 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: white; margin-bottom: 1rem; }
-    .second-choice-box h4 span { color: var(--amber); }
+    .second-choice-box { background: #d0e0f0; border-radius: 12px; padding: 2rem; margin-top: 1.5rem; }
+    .second-choice-box h4 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: #0d2a4a; margin-bottom: 1rem; }
+    .second-choice-box h4 span { color: var(--amber-dk); }
     .sc-items { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .sc-tag { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); padding: 0.3rem 0.75rem; border-radius: 3px; font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; }
+    .sc-tag { background: rgba(13,42,74,0.08); border: 1px solid rgba(13,42,74,0.15); color: rgba(13,42,74,0.7); padding: 0.3rem 0.75rem; border-radius: 3px; font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; }
     .vision-card { background: var(--red); border-radius: 10px; padding: 1.75rem; margin-bottom: 1.25rem; }
-    .mission-card { background: var(--bg-dark); border-radius: 10px; padding: 1.75rem; }
-    .vm-label { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); margin-bottom: 0.75rem; }
-    .vm-text { font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: white; line-height: 1.65; font-style: italic; }
+    .mission-card { background: #c8ddf0; border-radius: 10px; padding: 1.75rem; }
+    .vm-label { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(13,42,74,0.4); margin-bottom: 0.75rem; }
+    .vm-text { font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: #0d2a4a; line-height: 1.65; font-style: italic; }
 
     /* SPECIALISATIONS */
     #specialise { background: var(--bg-alt); }
@@ -129,16 +129,6 @@
     .why-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
     .why-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--ink); }
     .why-desc { font-size: 0.85rem; color: var(--gray-md); line-height: 1.65; }
-
-    /* OPERATIONS */
-    #operations { background: var(--bg-dark); }
-    #operations .section-tag { color: var(--amber); }
-    #operations .section-title { color: white; }
-    #operations .section-lead { color: rgba(255,255,255,0.5); }
-    .map-legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
-    .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.65); }
-    .legend-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
-    .map-container { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; overflow: hidden; padding: 1.5rem; }
 
     /* SECOND LIFE */
     #secondlife { background: linear-gradient(135deg, #1a4a2e 0%, #2d6e3e 50%, #1e5a30 100%); padding: 7rem 2rem; }
@@ -180,15 +170,15 @@
     .btn-submit:hover { background: var(--red-dk); }
 
     /* FOOTER */
-    footer { background: var(--bg-dark); color: white; padding: 3rem 2rem 2rem; }
+    footer { background: #e8f0f8; color: #0d2a4a; padding: 3rem 2rem 2rem; }
     .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem; }
     .footer-brand img { height: 56px; width: auto; margin-bottom: 0.75rem; }
-    .footer-brand p { font-size: 0.82rem; color: rgba(255,255,255,0.3); max-width: 220px; line-height: 1.6; }
-    .footer-links h4 { font-size: 0.7rem; font-weight: 600; margin-bottom: 1rem; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 0.12em; }
+    .footer-brand p { font-size: 0.82rem; color: rgba(13,42,74,0.45); max-width: 220px; line-height: 1.6; }
+    .footer-links h4 { font-size: 0.7rem; font-weight: 600; margin-bottom: 1rem; color: rgba(13,42,74,0.4); text-transform: uppercase; letter-spacing: 0.12em; }
     .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-    .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.4); transition: color 0.2s; }
+    .footer-links a { font-size: 0.85rem; color: rgba(13,42,74,0.5); transition: color 0.2s; }
     .footer-links a:hover { color: var(--amber); }
-    .footer-bottom { max-width: 1100px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem; color: rgba(255,255,255,0.2); }
+    .footer-bottom { max-width: 1100px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(13,42,74,0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem; color: rgba(13,42,74,0.3); }
 
     /* FADE IN */
     .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -218,7 +208,7 @@
     <li><a href="#what">About</a></li>
     <li><a href="#specialise">Specialisations</a></li>
     <li><a href="#areas">Products</a></li>
-    <li><a href="#operations">Operations</a></li>
+    <li><a href="#why">Why Us</a></li>
     <li><a href="#secondlife">Our Purpose</a></li>
     <li><a href="#journey">Paper Journey</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -269,8 +259,8 @@
       </div>
       <div>
         <div class="vision-card">
-          <div class="vm-label">Our Vision</div>
-          <div class="vm-text">To lead in ethically repurposing paper and packaging materials, shaping a circular economy through integrity, passion, and over 60 years of trusted expertise.</div>
+          <div class="vm-label" style="color:rgba(255,255,255,0.5)">Our Vision</div>
+          <div class="vm-text" style="color:white">To lead in ethically repurposing paper and packaging materials, shaping a circular economy through integrity, passion, and over 60 years of trusted expertise.</div>
         </div>
         <div class="mission-card">
           <div class="vm-label">Our Mission</div>
@@ -347,56 +337,6 @@
   </div>
 </section>
 
-<!-- OPERATIONS MAP -->
-<section id="operations">
-  <div class="section-inner">
-    <div class="fade-up">
-      <div class="section-tag">Global Operations</div>
-      <h2 class="section-title">Where We Operate</h2>
-      <p class="section-lead">Based in Germany and the UAE, we source primarily from Europe and North America, serving buyers across the Middle East, Africa and South Asia. We are always open to new markets and new partnerships.</p>
-    </div>
-    <div class="map-legend fade-up">
-      <div class="legend-item"><div class="legend-dot" style="background:#3a9bd5"></div>Our Offices</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#2d9e5f"></div>Our Suppliers</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#e8803a"></div>Our Customers</div>
-    </div>
-    <div class="map-container fade-up">
-      <svg width="100%" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
-        <rect width="1000" height="500" fill="#1a2a3a" rx="8"/>
-        <path d="M 100 60 L 240 55 L 260 80 L 250 140 L 230 180 L 210 200 L 180 220 L 160 250 L 140 240 L 120 200 L 90 170 L 75 130 L 80 90 Z" fill="#2d9e5f" opacity="0.8"/>
-        <ellipse cx="265" cy="45" rx="30" ry="20" fill="#2d9e5f" opacity="0.6"/>
-        <path d="M 190 270 L 230 265 L 250 290 L 245 350 L 230 400 L 210 420 L 195 400 L 185 360 L 175 310 L 178 280 Z" fill="#2a3a2a" opacity="0.5"/>
-        <path d="M 450 70 L 510 65 L 530 80 L 525 110 L 510 120 L 490 115 L 470 125 L 460 115 L 445 100 L 440 80 Z" fill="#2d9e5f" opacity="0.85"/>
-        <ellipse cx="488" cy="95" rx="18" ry="14" fill="#3a9bd5" opacity="0.95"/>
-        <circle cx="488" cy="95" r="5" fill="white" opacity="0.9"/>
-        <text x="510" y="88" fill="#3a9bd5" font-size="10" font-family="Inter" font-weight="600">Germany ★</text>
-        <path d="M 470 50 L 500 45 L 510 65 L 490 70 L 470 65 Z" fill="#2d9e5f" opacity="0.8"/>
-        <ellipse cx="445" cy="80" rx="10" ry="14" fill="#2d9e5f" opacity="0.8"/>
-        <path d="M 445 165 L 520 160 L 545 200 L 540 280 L 520 330 L 500 340 L 480 320 L 460 280 L 445 240 L 435 200 Z" fill="#2a3a2a" opacity="0.5"/>
-        <path d="M 445 165 L 520 160 L 530 195 L 480 200 L 445 195 Z" fill="#e8803a" opacity="0.85"/>
-        <ellipse cx="485" cy="260" rx="18" ry="14" fill="#e8803a" opacity="0.8"/>
-        <ellipse cx="510" cy="290" rx="14" ry="12" fill="#e8803a" opacity="0.75"/>
-        <path d="M 535 140 L 610 135 L 625 160 L 615 190 L 590 200 L 560 195 L 535 175 L 530 155 Z" fill="#e8803a" opacity="0.85"/>
-        <ellipse cx="598" cy="168" rx="10" ry="8" fill="#3a9bd5" opacity="0.95"/>
-        <circle cx="598" cy="168" r="4" fill="white" opacity="0.9"/>
-        <text x="612" y="165" fill="#3a9bd5" font-size="9" font-family="Inter" font-weight="600">UAE ★</text>
-        <path d="M 510 55 L 780 50 L 790 100 L 750 120 L 680 125 L 600 120 L 540 110 L 510 90 Z" fill="#2a3a2a" opacity="0.4"/>
-        <path d="M 640 165 L 680 160 L 695 200 L 680 240 L 665 250 L 645 230 L 635 200 L 632 175 Z" fill="#e8803a" opacity="0.75"/>
-        <path d="M 610 140 L 645 135 L 655 165 L 640 165 L 612 160 Z" fill="#e8803a" opacity="0.8"/>
-        <ellipse cx="700" cy="185" rx="12" ry="10" fill="#e8803a" opacity="0.75"/>
-        <path d="M 780 310 L 870 305 L 890 340 L 880 380 L 855 395 L 820 390 L 795 370 L 780 340 Z" fill="#2a3a2a" opacity="0.4"/>
-        <path d="M 750 100 L 830 95 L 860 130 L 840 160 L 800 165 L 760 155 L 745 130 Z" fill="#2a3a2a" opacity="0.35"/>
-        <line x1="200" y1="150" x2="460" y2="95" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="6,4"/>
-        <line x1="488" y1="95" x2="598" y2="168" stroke="rgba(58,155,213,0.25)" stroke-width="1.5" stroke-dasharray="4,3"/>
-        <line x1="200" y1="150" x2="488" y2="95" stroke="rgba(45,158,95,0.2)" stroke-width="1.5" stroke-dasharray="4,3"/>
-      </svg>
-      <p style="text-align:center;font-size:0.72rem;color:rgba(255,255,255,0.22);margin-top:1rem;font-family:'JetBrains Mono',monospace">
-        🔵 Offices (Germany · UAE) &nbsp;|&nbsp; 🟢 Suppliers (Europe · North America) &nbsp;|&nbsp; 🟠 Customers (Middle East · Africa · South Asia)
-      </p>
-    </div>
-  </div>
-</section>
-
 <!-- SECOND LIFE -->
 <section id="secondlife" style="background:linear-gradient(135deg,#1a4a2e 0%,#2d6e3e 50%,#1e5a30 100%);padding:7rem 2rem">
   <div class="section-inner">
@@ -463,7 +403,7 @@
       <div class="contact-form">
         <h3>Send a Message</h3>
         <p>We reply to every genuine enquiry within one business day.</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://formspree.io/f/mlgydnoo" method="POST">
           <div class="form-row">
             <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="John" required></div>
             <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required></div>
@@ -492,7 +432,7 @@
         <li><a href="#what">About Us</a></li>
         <li><a href="#specialise">Specialisations</a></li>
         <li><a href="#areas">Products</a></li>
-        <li><a href="#operations">Operations</a></li>
+        <li><a href="#why">Why Us</a></li>
         <li><a href="#secondlife">Our Purpose</a></li>
         <li><a href="#journey">Paper Journey</a></li>
         <li><a href="#contact">Contact</a></li>
